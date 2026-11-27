@@ -19,7 +19,7 @@
     },
     {
       "description": "Keep after non-major. A PHP minor or major bump is a project decision: its own PR, opened on demand from the dashboard.",
-      "matchPackageNames": ["php"],
+      "matchDepNames": ["php"],
       "matchUpdateTypes": ["minor", "major"],
       "groupName": "php",
       "automerge": false,
