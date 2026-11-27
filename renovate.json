@@ -16,6 +16,14 @@
       "automerge": true,
       "prConcurrentLimit": 0,
       "prHourlyLimit": 0
+    },
+    {
+      "description": "Keep after non-major. A PHP minor or major bump is a project decision: its own PR, opened on demand from the dashboard.",
+      "matchPackageNames": ["php"],
+      "matchUpdateTypes": ["minor", "major"],
+      "groupName": "php",
+      "automerge": false,
+      "dependencyDashboardApproval": true
     }
   ]
 }
