@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector;
 use Rector\Config\RectorConfig;
-use Rector\Set\ValueObject\SetList;
 
 return RectorConfig::configure()
     ->withPaths([
@@ -19,9 +18,7 @@ return RectorConfig::configure()
         codingStyle: true,
         naming: true,
     )
-    ->withSets([
-        SetList::PHP_84,
-    ])
+    ->withPhpSets(php84: true)
     ->withSkip([
         NewlineAfterStatementRector::class,
     ])
