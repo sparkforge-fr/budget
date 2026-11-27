@@ -13,11 +13,13 @@ return RectorConfig::configure()
     ])
     // uncomment to reach your current PHP version
     // ->withPhpSets()
+    ->withPreparedSets(
+        deadCode: true,
+        codeQuality: true,
+        codingStyle: true,
+        naming: true,
+    )
     ->withSets([
-        SetList::CODE_QUALITY,
-        SetList::CODING_STYLE,
-        SetList::DEAD_CODE,
-        SetList::NAMING,
         SetList::PHP_84,
     ])
     ->withSkip([
